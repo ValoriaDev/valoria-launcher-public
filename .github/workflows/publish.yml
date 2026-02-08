@@ -33,7 +33,7 @@ jobs:
             - name: Checkout Repository
               uses: actions/checkout@v4
               with:
-                repository: valoria-launcher
+                repository: ${{ github.repository_owner }}/valoria-launcher
                 ref: ${{ github.ref_name }}
                 token: ${{ secrets.CHECKOUT_TOKEN }}
 
